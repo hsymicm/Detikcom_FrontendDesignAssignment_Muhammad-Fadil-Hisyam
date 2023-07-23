@@ -1,0 +1,130 @@
+p {
+    line-height: 20px;
+}
+
+.home-title {
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.register-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.form-register p {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--gray);
+    margin-top: 4px;
+}
+
+.form-register li,
+.form-register label {
+    font-size: 12px;
+}
+
+.home-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.home-paragraph {
+    font-weight: 600;
+    width: 80%;
+}
+
+#about h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+#mekanisme h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+#mekanisme h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#brands h2 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+#latestUpdate h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.post-title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.post-date {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.footer-content p {
+    font-weight: 600px;
+}
+
+.footer-copyright {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 960px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    .home-title {
+        font-size: 36px;
+    }
+
+    .home-subtitle {
+        font-size: 18px;
+    }
+
+    .home-paragraph {
+        font-size: 12px;
+        width: auto;
+    }
+
+    #mekanisme h2 {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+
+    #brands h2 {
+        font-size: 14px;
+        max-width: none;
+        width: 80%;
+    }
+
+    #latestUpdate h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+}

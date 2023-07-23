@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/text.css">
+    <link rel="stylesheet" href="./assets/css/button.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Welcome</title>
+    <script src="./assets/js/index.js" defer></script>
+    <script src="./assets/js/home.js" defer></script>
+</head>
+<body>
+    <header class="jumbotron-home">
+        <nav class="nav-container bg-blue">
+            <img
+                onclick="scrollToTop();"
+                style="cursor: pointer;"
+                src="assets/img/navbar_brand.png"
+                width="194px"
+                alt="Navbar Brand Logo"
+            >
+            <ul class="nav-menu text-white">
+                <li onclick="scrollToTarget('about')">About</li>
+                <li onclick="scrollToTarget('mekanisme')">Mechanism</li>
+                <li onclick="scrollToTarget('latestUpdate')">Latest Update</li>
+                <button onclick="navigate('register.html')" class="btn btn-rounded bg-white text-blue">
+                    Register
+                </button>
+            </ul>
+        </nav>
+        <section class="home-container text-white">
+            <h2 class="home-subtitle">Detikfinance Business Plan Competition 2023</h2>
+            <h1 class="home-title">Empower Indonesia Startup</h1>
+            <p class="home-paragraph">Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor</p>
+            <button onclick="navigate('register.html')" style="margin-top: 32px;" class="btn bg-cyan text-white">
+                Daftarkan startup kamu
+            </button>
+        </section>
+    </header>
+    <main>
+        <div id="about">
+            <div class="about-img">
+                <div class="play">
+                    <svg style="margin-left: 2px;" width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.6861 6.80389L0.156715 13.4604L0.156715 0.14738L11.6861 6.80389Z" fill="white"/>
+                    </svg>
+                </div>
+                <img src="assets/img/about_thumb.png" alt="About Thumbnail">
+            </div>
+            <article class="about-content">
+                <h2 class="about-title text-blue">About Detikfinance Business Plan Competition 2023</h2>
+                <p>Detikfinance kali ini akan memberikan ruang bagi startup untuk networking dan memamerkan produk inovasinya di hadapan venture capital dan angel investor. Acara ini juga akan menghadirkan para pengembang teknologi dan pelaku bisnis untuk memberikan edukasi dan inspirasi bagi masyarakat Indonesia dan teknofilia mengenai perkembangan teknologi di Indonesia.</p>
+                <section class="about-share text-blue">
+                    <p style="font-weight: 400;">Share</p>
+                    <svg width="22" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.4691 2.07843L22.4669 2.01228C22.4403 1.61113 22.1761 1.26492 21.7962 1.13343C21.4163 1.00194 20.9946 1.11074 20.7257 1.40962L21.4691 2.07843ZM21.0428 6.30544C21.0428 5.75315 20.5951 5.30544 20.0428 5.30544C19.4905 5.30544 19.0428 5.75315 19.0428 6.30544H21.0428ZM11.5 7.57843V8.57843H12.5V7.57843H11.5ZM2.92637 2.07843L3.86287 1.72778C3.72334 1.35511 3.37612 1.10064 2.97873 1.0798C2.58133 1.05897 2.20941 1.27573 2.03166 1.63177L2.92637 2.07843ZM8.5 15.0784L9.20766 15.785C9.45238 15.5399 9.55284 15.1856 9.47321 14.8485C9.39358 14.5114 9.1452 14.2396 8.81667 14.1299L8.5 15.0784ZM1.5 17.7927V16.7927C1.05946 16.7927 0.670822 17.081 0.543011 17.5026C0.415201 17.9242 0.578333 18.3797 0.944707 18.6244L1.5 17.7927ZM18.9515 3.46897L18.2098 4.13966L18.5701 4.53815L19.1013 4.4577L18.9515 3.46897ZM20.4713 2.14458C20.544 3.24137 20.4734 3.87022 20.3125 4.3237C20.1591 4.75628 19.8897 5.12582 19.3509 5.64212L20.7346 7.08617C21.3745 6.47303 21.8944 5.84675 22.1974 4.99235C22.4931 4.15886 22.5463 3.20957 22.4669 2.01228L20.4713 2.14458ZM21.0428 7.34628V6.36414H19.0428V7.34628H21.0428ZM21.0428 6.36414V6.30544H19.0428V6.36414H21.0428ZM10.5 6.57843V7.57843H12.5V6.57843H10.5ZM15.8223 1.07843C12.8235 1.07843 10.5 3.67909 10.5 6.57843H12.5C12.5 4.67905 14.0298 3.07843 15.8223 3.07843V1.07843ZM19.0428 7.34628C19.0428 13.3721 13.9765 18.5784 8 18.5784V20.5784C15.1201 20.5784 21.0428 14.4372 21.0428 7.34628H19.0428ZM1.98986 2.42908C2.80654 4.61027 5.83814 8.57843 11.5 8.57843V6.57843C6.89202 6.57843 4.47256 3.35611 3.86287 1.72778L1.98986 2.42908ZM2.03166 1.63177C0.511097 4.6776 0.226447 7.70131 1.31373 10.3033C2.40104 12.9053 4.77867 14.8903 8.18333 16.027L8.81667 14.1299C5.80268 13.1237 3.96713 11.4658 3.1591 9.53216C2.35104 7.59841 2.4889 5.19354 3.82107 2.52509L2.03166 1.63177ZM7.79234 14.3719C6.98383 15.1817 4.60002 16.7927 1.5 16.7927V18.7927C5.24654 18.7927 8.11438 16.88 9.20766 15.785L7.79234 14.3719ZM19.6933 2.79829C18.7396 1.74362 17.358 1.07843 15.8223 1.07843V3.07843C16.7687 3.07843 17.6189 3.48623 18.2098 4.13966L19.6933 2.79829ZM19.1013 4.4577C20.2557 4.28286 21.3748 3.67845 22.2126 2.74724L20.7257 1.40962C20.1856 2.01004 19.4805 2.37745 18.8018 2.48025L19.1013 4.4577ZM0.944707 18.6244C3.30076 20.1975 5.57113 20.5784 8 20.5784V18.5784C5.81913 18.5784 3.97834 18.2451 2.05529 16.9611L0.944707 18.6244Z" fill="#007CBD"/>
+                    </svg>
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.50042 10.5784C2.50042 8.89729 2.99893 7.2539 3.93293 5.85608C4.86692 4.45827 6.19444 3.3688 7.74761 2.72545C9.30078 2.08211 11.0098 1.91378 12.6587 2.24176C14.3075 2.56973 15.8221 3.37928 17.0108 4.56802C18.1996 5.75677 19.0091 7.27132 19.3371 8.92016C19.6651 10.569 19.4967 12.2781 18.8534 13.8312C18.21 15.3844 17.1206 16.7119 15.7228 17.6459C14.3249 18.5799 12.6816 19.0784 11.0004 19.0784C9.39226 19.0813 7.81665 18.6255 6.45842 17.7644C6.3376 17.688 6.2018 17.6384 6.06017 17.6189C5.91855 17.5994 5.77439 17.6105 5.63742 17.6514L2.75742 18.5104L3.84242 15.9734C3.90548 15.8257 3.93205 15.665 3.91986 15.5049C3.90768 15.3447 3.8571 15.1899 3.77242 15.0534C2.93835 13.71 2.49767 12.1597 2.50042 10.5784ZM11.0004 0.0784302C5.20142 0.0784302 0.500417 4.77943 0.500417 10.5784C0.500417 12.4164 0.973417 14.1464 1.80542 15.6514L0.0804171 19.6854C0.00575691 19.8602 -0.0175686 20.0526 0.0131725 20.2401C0.0439136 20.4276 0.127449 20.6025 0.253994 20.7443C0.38054 20.886 0.544858 20.9888 0.727703 21.0405C0.910548 21.0923 1.10435 21.0909 1.28642 21.0364L5.78642 19.6944C7.37344 20.6039 9.17128 21.0811 11.0004 21.0784C16.7994 21.0784 21.5004 16.3774 21.5004 10.5784C21.5004 4.77943 16.7994 0.0784302 11.0004 0.0784302ZM13.2934 12.7604L11.9784 13.6864C11.2539 13.2696 10.5886 12.7573 10.0004 12.1634C9.36895 11.5328 8.82296 10.8221 8.37642 10.0494L9.21142 9.34043C9.38541 9.19281 9.50368 8.99013 9.54661 8.76604C9.58954 8.54194 9.55454 8.3099 9.44742 8.10843L8.38342 6.10843C8.31261 5.97561 8.21274 5.86048 8.09124 5.77163C7.96974 5.68279 7.82975 5.62251 7.68171 5.59531C7.53367 5.5681 7.3814 5.57467 7.23625 5.61451C7.0911 5.65436 6.95682 5.72646 6.84342 5.82543L6.52742 6.10043C5.76842 6.76243 5.31942 7.85043 5.69142 8.95243C6.28992 10.6955 7.28032 12.2781 8.58642 13.5784C10.3994 15.3914 12.2414 16.1054 13.3194 16.3834C14.1874 16.6064 15.0084 16.3074 15.5874 15.8354L16.1784 15.3534C16.303 15.2518 16.4013 15.1217 16.4649 14.974C16.5285 14.8264 16.5555 14.6655 16.5438 14.5052C16.532 14.3448 16.4817 14.1897 16.3972 14.0529C16.3127 13.9161 16.1965 13.8017 16.0584 13.7194L14.3804 12.7194C14.2145 12.6204 14.0234 12.5716 13.8303 12.5789C13.6373 12.5862 13.4504 12.6492 13.2924 12.7604H13.2934Z" fill="#007CBD"/>
+                    </svg>
+                    <svg width="22" height="22" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0004 21.5784C5.47756 21.5784 1.00041 17.1013 1.00041 11.5784C1.00041 6.05558 5.47756 1.57843 11.0004 1.57843C16.5233 1.57843 21.0004 6.05558 21.0004 11.5784C21.0004 17.1013 16.5233 21.5784 11.0004 21.5784ZM11.0004 21.5784V9.57843C11.0004 8.47386 11.8958 7.57843 13.0004 7.57843H14.5004M7.50041 13.5784H14.5004" stroke="#007CBD" stroke-width="2"/>
+                    </svg>
+                </section>
+            </article>
+        </div>
+        <div id="mekanisme">
+            <div class="mekanisme-container">
+                <h2 class="text-white">Mekanisme</h2>
+                <article class="mekanisme-card bg-white">
+                    <div class="mekanisme-icon bg-gradient">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.7463 0H7.26612C2.71385 0 0 2.604 0 6.972V17.016C0 21.396 2.71385 24 7.26612 24H17.7338C22.2861 24 25 21.396 25 17.028V6.972C25.0125 2.604 22.2986 0 17.7463 0ZM11.1931 18.612C10.8304 18.96 10.1426 19.296 9.64231 19.368L6.56577 19.788C6.45322 19.8 6.34066 19.812 6.2281 19.812C5.71535 19.812 5.24011 19.644 4.90244 19.32C4.48974 18.924 4.31465 18.348 4.4147 17.712L4.85242 14.76C4.92746 14.268 5.26512 13.62 5.64031 13.272L11.2181 7.92C11.3181 8.172 11.4182 8.424 11.5558 8.712C11.6808 8.964 11.8184 9.228 11.9685 9.468C12.0935 9.672 12.2311 9.864 12.3437 10.008C12.4812 10.212 12.6438 10.404 12.7438 10.512C12.8064 10.596 12.8564 10.656 12.8814 10.68C13.1941 11.04 13.5568 11.376 13.8694 11.628C13.957 11.712 14.007 11.76 14.032 11.772C14.2196 11.916 14.4072 12.06 14.5698 12.168C14.7699 12.312 14.97 12.444 15.1826 12.552C15.4327 12.696 15.7078 12.828 15.983 12.96C16.2706 13.08 16.5332 13.188 16.7959 13.272L11.1931 18.612ZM19.2221 10.908L18.0715 12.024C17.9965 12.096 17.8964 12.132 17.7964 12.132C17.7589 12.132 17.7088 12.132 17.6838 12.12C15.145 11.424 13.119 9.48 12.3937 7.044C12.3562 6.912 12.3937 6.768 12.4937 6.684L13.6568 5.568C15.5578 3.744 17.3712 3.78 19.2346 5.568C20.1851 6.48 20.6478 7.356 20.6478 8.268C20.6353 9.132 20.1726 9.996 19.2221 10.908Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <section>
+                        <div class="title-header">
+                            <h3 class="text-blue">Registrasi</h3>
+                            <p class="text-blue" >1 - 30 Januari 2023</p>
+                        </div>
+                        <ol>
+                            <li>Calon peserta diminta untuk mengisi formulir pendaftaran online yang berisi informasi pribadi, kontak, dan rincian tim pada <a href="register.html" class="text-cyan">link berikut</a></li>
+                            <li>Selain itu, peserta juga diharapkan mengunggah ringkasan rencana bisnis mereka yang mencakup visi, misi, strategi, dan analisis pasar</li>
+                        </ol>
+                    </section>
+                </article>
+                <article class="mekanisme-card bg-white">
+                    <div class="mekanisme-icon bg-gradient">
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.5 0.00012207C7.23498 0.00012207 0.5 6.7351 0.5 15.0001C0.5 23.2651 7.23498 30 15.5 30C23.7649 30 30.4999 23.2651 30.4999 15.0001C30.4999 6.7351 23.7649 0.00012207 15.5 0.00012207ZM22.6699 11.5501L14.165 20.0551C13.955 20.2651 13.67 20.3851 13.37 20.3851C13.07 20.3851 12.785 20.2651 12.575 20.0551L8.32998 15.8101C7.89498 15.3751 7.89498 14.6551 8.32998 14.2201C8.76498 13.7851 9.48497 13.7851 9.91997 14.2201L13.37 17.6701L21.0799 9.96009C21.5149 9.5251 22.2349 9.5251 22.6699 9.96009C23.1049 10.3951 23.1049 11.1001 22.6699 11.5501Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <section>
+                        <div class="title-header">
+                            <h3 class="text-blue">Seleksi Peserta</h3>
+                            <p class="text-blue">1 - 7 Februari 2023</p>
+                        </div>
+                        <ol>
+                            <li>Tim seleksi akan meninjau setiap pendaftaran dan mengevaluasi kualitas dan kelayakan bisnis plan yang diajukan</li>
+                            <li>Kriteria evaluasi dapat mencakup inovasi, potensi pertumbuhan, kelayakan keuangan, dan kejelasan presentasi</li>
+                            <li>Peserta yang memenuhi persyaratan seleksi akan dipilih sebagai finalis dan berhak melanjutkan ke tahap berikutnya</li>
+                        </ol>
+                    </section>
+                </article>
+                <article class="mekanisme-card bg-white">
+                    <div class="mekanisme-icon bg-gradient">
+                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.5929 1.81406H1.40709C0.911281 1.81406 0.500122 1.4029 0.500122 0.907091C0.500122 0.411281 0.911281 0.00012207 1.40709 0.00012207H25.5929C26.0887 0.00012207 26.4999 0.411281 26.4999 0.907091C26.4999 1.4029 26.0887 1.81406 25.5929 1.81406Z" fill="white"/>
+                            <path d="M19.1478 25.5041C18.9906 25.8185 18.6641 25.9999 18.3376 25.9999C18.2045 25.9999 18.0594 25.9637 17.9385 25.9032L13.5004 23.6902L9.06225 25.9032C8.94132 25.9637 8.79621 25.9999 8.66318 25.9999C8.33667 25.9999 8.01017 25.8185 7.85296 25.5041C7.62319 25.0446 7.80459 24.5004 8.26412 24.2827L12.5934 22.1181V19.0465H14.4074V22.1181L18.7366 24.2827C19.1962 24.5004 19.3776 25.0446 19.1478 25.5041Z" fill="white"/>
+                            <path d="M2.61633 0.907104V15.5395C2.61633 17.8372 3.82563 19.0465 6.12328 19.0465H20.8766C23.1743 19.0465 24.3836 17.8372 24.3836 15.5395V0.907104H2.61633ZM19.5222 8.86425L15.713 12.0447C15.3623 12.3349 14.9148 12.4558 14.4916 12.3833C14.0562 12.3107 13.6814 12.0447 13.4516 11.6577L12.1818 9.54145L8.63861 12.4921C8.46931 12.6372 8.26373 12.6977 8.05815 12.6977C7.8042 12.6977 7.53815 12.5889 7.35676 12.3712C7.03025 11.9842 7.09071 11.4159 7.47769 11.0893L11.287 7.90891C11.6377 7.61868 12.0851 7.49775 12.5083 7.5703C12.9437 7.64286 13.3186 7.90891 13.5483 8.29588L14.8181 10.4121L18.3613 7.46147C18.7483 7.13496 19.3167 7.19542 19.6432 7.5824C19.9576 7.96937 19.9092 8.53774 19.5222 8.86425Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <section>
+                        <div class="title-header">
+                            <h3 class="text-blue">Pengumuman Peserta Terpilih</h3>
+                            <p class="text-blue">8 Februari 2023</p>
+                        </div>
+                        <ol>
+                            <li>Pengumuman finalis akan dilakukan melalui email</li>
+                            <li>Pada acara pengumuman pemenang, setiap finalis akan mempresentasikan rencana bisnis mereka di hadapan panel juri</li>
+                            <li>Setelah presentasi, panel juri akan melakukan evaluasi dan mengumumkan pemenang kompetisi business plan</li>
+                        </ol>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <div id="brands">
+            <h2 class="text-blue">Dapatkan Kesempatan Dilirik oleh Venture Capital / Angel Investor Serta Menjadi Narasumber di Detikfinance</h2>
+            <div class="scroller-container">
+                <div id="scroller"></div>
+            </div>
+            <button onclick="navigate('register.html')" style="margin: 0 auto; margin-top: 48px;" class="btn bg-cyan text-white">
+                Daftarkan startup kamu
+            </button>
+        </div>
+        <div id="latestUpdate">
+            <h2 class="text-blue">Latest Update</h2>
+            <div id="posts"></div>
+        </div>
+    </main>
+    <footer class="footer-container bg-blue text-white">
+        <img
+            onclick="scrollToTop()"
+            style="cursor: pointer;"
+            src="assets/img/navbar_brand.png"
+            width="194px"
+            alt="Navbar Brand Logo"
+        >
+        <div class="footer-content">
+            <p>Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor</p>
+            <section class="footer-social">
+                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.4691 2.65674L20.968 2.62366C20.9547 2.42309 20.8226 2.24998 20.6327 2.18424C20.4427 2.11849 20.2319 2.1729 20.0974 2.32234L20.4691 2.65674ZM19.5428 6.88374C19.5428 6.6076 19.3189 6.38374 19.0428 6.38374C18.7666 6.38374 18.5428 6.6076 18.5428 6.88374H19.5428ZM10.5 8.15674V8.65674H11V8.15674H10.5ZM1.92637 2.65674L2.39462 2.48141C2.32485 2.29508 2.15124 2.16784 1.95255 2.15742C1.75385 2.14701 1.56789 2.25539 1.47902 2.43341L1.92637 2.65674ZM7.5 15.6567L7.85383 16.01C7.97619 15.8875 8.02642 15.7103 7.98661 15.5418C7.94679 15.3732 7.8226 15.2373 7.65833 15.1825L7.5 15.6567ZM0.5 18.371V17.871C0.279732 17.871 0.0854109 18.0152 0.0215057 18.226C-0.0423996 18.4368 0.0391667 18.6645 0.222353 18.7869L0.5 18.371ZM17.9515 4.04728L17.5806 4.38262L17.7608 4.58187L18.0264 4.54164L17.9515 4.04728ZM19.9702 2.68982C20.0446 3.81173 19.9783 4.52069 19.7838 5.06917C19.5929 5.60721 19.2609 6.04093 18.6968 6.58144L19.3887 7.30346C20.0033 6.71454 20.4605 6.15244 20.7262 5.4035C20.9882 4.66501 21.0458 3.79583 20.968 2.62366L19.9702 2.68982ZM19.5428 7.92458V6.94245H18.5428V7.92458H19.5428ZM19.5428 6.94245V6.88374H18.5428V6.94245H19.5428ZM10 7.15674V8.15674H11V7.15674H10ZM14.8223 2.15674C12.125 2.15674 10 4.50739 10 7.15674H11C11 5.00737 12.7282 3.15674 14.8223 3.15674V2.15674ZM18.5428 7.92458C18.5428 14.2167 13.2624 19.6567 7 19.6567V20.6567C13.8342 20.6567 19.5428 14.7493 19.5428 7.92458H18.5428ZM1.45811 2.83206C2.22305 4.87504 5.10161 8.65674 10.5 8.65674V7.65674C5.62855 7.65674 3.05605 4.24796 2.39462 2.48141L1.45811 2.83206ZM1.47902 2.43341C0.00554863 5.3849 -0.242404 8.25389 0.775073 10.6888C1.79256 13.1237 4.03467 15.027 7.34167 16.131L7.65833 15.1825C4.54668 14.1436 2.57561 12.404 1.69776 10.3032C0.819895 8.20244 0.994452 5.64287 2.37372 2.88007L1.47902 2.43341ZM7.14617 15.3035C6.26646 16.1845 3.76165 17.871 0.5 17.871V18.871C4.08491 18.871 6.83174 17.0337 7.85383 16.01L7.14617 15.3035ZM18.3224 3.71194C17.4594 2.75758 16.2107 2.15674 14.8223 2.15674V3.15674C15.916 3.15674 16.8991 3.62888 17.5806 4.38262L18.3224 3.71194ZM18.0264 4.54164C19.0619 4.38482 20.0775 3.83966 20.8409 2.99114L20.0974 2.32234C19.4829 3.00545 18.6743 3.43211 17.8766 3.55292L18.0264 4.54164ZM0.222353 18.7869C2.47016 20.2877 4.63313 20.6567 7 20.6567V19.6567C4.75713 19.6567 2.80895 19.3115 0.777647 17.9552L0.222353 18.7869Z" fill="#F2F2F2"/>
+                </svg>
+                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 6.15674H17M4.5 1.15674H16.5C18.7091 1.15674 20.5 2.9476 20.5 5.15674V17.1567C20.5 19.3659 18.7091 21.1567 16.5 21.1567H4.5C2.29086 21.1567 0.5 19.3659 0.5 17.1567V5.15674C0.5 2.9476 2.29086 1.15674 4.5 1.15674ZM10.5 15.1567C8.29086 15.1567 6.5 13.3659 6.5 11.1567C6.5 8.9476 8.29086 7.15674 10.5 7.15674C12.7091 7.15674 14.5 8.9476 14.5 11.1567C14.5 13.3659 12.7091 15.1567 10.5 15.1567Z" stroke="#F2F2F2"/>
+                </svg>
+                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 21.1567C4.97715 21.1567 0.5 16.6796 0.5 11.1567C0.5 5.63389 4.97715 1.15674 10.5 1.15674C16.0228 1.15674 20.5 5.63389 20.5 11.1567C20.5 16.6796 16.0228 21.1567 10.5 21.1567ZM10.5 21.1567V9.15674C10.5 8.05217 11.3954 7.15674 12.5 7.15674H14M7 13.1567H14" stroke="#F2F2F2"/>
+                </svg>
+            </section>
+        </div>
+        <div class="spacer bg-white"></div>
+        <p class="footer-copyright">&copy 2023 Detikcom. All rights reserved</p>
+    </footer>
+</body>
+</html>

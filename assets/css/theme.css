@@ -1,0 +1,39 @@
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-cyan {
+    background-color: var(--cyan);
+}
+
+.bg-light-cyan {
+    background-color: var(--light-cyan);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-cyan {
+    color: var(--cyan);
+}
+
+.text-white {
+    color: white;
+}
+
+.text-gray {
+    color: var(--gray)
+}
+
+.text-black {
+    color: var(--slate);
+}
+
+.bg-gradient {
+    background: linear-gradient(-60deg, var(--blue), var(--cyan));
+}
