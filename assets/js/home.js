@@ -56,6 +56,9 @@ posts.forEach((post) => {
     const container = document.createElement('article');
     container.className = 'post-container';
 
+    const imageWrapper = document.createElement('div');
+    imageWrapper.className = 'img-wrapper';
+
     const image = document.createElement('img');
     image.setAttribute('src', `./assets/img/post_img/${post.cover}`);
 
@@ -67,6 +70,7 @@ posts.forEach((post) => {
     date.innerText = '1 hari yang lalu';
     date.className = 'post-date text-gray';
 
-    container.append(image, title, date);
+    imageWrapper.appendChild(image);
+    container.append(imageWrapper, title, date);
     postContainer.appendChild(container);
 });

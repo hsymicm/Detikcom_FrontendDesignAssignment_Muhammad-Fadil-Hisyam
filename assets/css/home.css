@@ -81,6 +81,11 @@
     border-radius: 10px;
     display: flex;
     gap: 30px;
+    transition: all 0.25s ease;
+}
+
+.mekanisme-card:hover {
+    box-shadow: 0 4px 8px var(--light-cyan);
 }
 
 .mekanisme-card:not(:last-child) {
@@ -161,12 +166,29 @@
 .post-container {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+}
+
+.post-container .img-wrapper {
+    overflow: hidden;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+
+.post-container:hover .post-title {
+    color: var(--blue);
 }
 
 .post-container img {
+    display: block;
     width: 100%;
-    margin-bottom: 12px;
+    transition: all 0.25s ease;
 }
+
+.post-container:hover img {
+    transform: scale(1.2);
+}
+
 
 @media screen and (max-width: 960px) {
     .home-container {
